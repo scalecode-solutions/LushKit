@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E5856CCA86318512DB8628E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB26203A146CC7F5BA0038 /* ContentView.swift */; };
+		312E853D70EF6B112D8DD2F4 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B0D141A441AA3B93904869 /* AuthModel.swift */; };
+		5FC87102D0F5437D1C7EA9E6 /* LushKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40E6CD9FFCACF3642198BDD7 /* LushKit */; };
+		9D79A175775929CD2DF81FA8 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C25A422D8B9C154703D8 /* Lab.swift */; };
+		ADC5C0FFB3A1D3D431F97AE0 /* LushLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FE7FD17477BA5C0DD6E36 /* LushLabApp.swift */; };
+		D9DA1B81F72D22FFA786C0DE /* MvAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A42312DEA7A06105D2C5AB09 /* MvAuth */; };
+		EDEA60C933E687E0374C8324 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10306A0C7D6A20CE2819ABE7 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03EBA647458429BB01DB354F /* LushLab.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LushLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10306A0C7D6A20CE2819ABE7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1534C25A422D8B9C154703D8 /* Lab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
+		867995ED133B22C7F21F1796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A8B0D141A441AA3B93904869 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		C78FE7FD17477BA5C0DD6E36 /* LushLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LushLabApp.swift; sourceTree = "<group>"; };
+		E1AB26203A146CC7F5BA0038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3DC66E0E214490A6683A6C6 /* LushKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LushKit; path = ..; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD20FC364B90578D9F406D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC87102D0F5437D1C7EA9E6 /* LushKit in Frameworks */,
+				D9DA1B81F72D22FFA786C0DE /* MvAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C9865FDEB8742432104076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03EBA647458429BB01DB354F /* LushLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A311F4C7EC209CD625C84E5C = {
+			isa = PBXGroup;
+			children = (
+				CF5A91A5C410D166DD0AD406 /* LushLab */,
+				FDDE2AAF820292E871968903 /* Packages */,
+				03C9865FDEB8742432104076 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF5A91A5C410D166DD0AD406 /* LushLab */ = {
+			isa = PBXGroup;
+			children = (
+				A8B0D141A441AA3B93904869 /* AuthModel.swift */,
+				E1AB26203A146CC7F5BA0038 /* ContentView.swift */,
+				867995ED133B22C7F21F1796 /* Info.plist */,
+				1534C25A422D8B9C154703D8 /* Lab.swift */,
+				10306A0C7D6A20CE2819ABE7 /* LoginView.swift */,
+				C78FE7FD17477BA5C0DD6E36 /* LushLabApp.swift */,
+			);
+			path = LushLab;
+			sourceTree = "<group>";
+		};
+		FDDE2AAF820292E871968903 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E3DC66E0E214490A6683A6C6 /* LushKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033FB0AB85E5AC5653609468 /* LushLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881E2BFC769732886B5FC79B /* Build configuration list for PBXNativeTarget "LushLab" */;
+			buildPhases = (
+				09F0FA36EDE8A657AE328F21 /* Sources */,
+				DD20FC364B90578D9F406D20 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LushLab;
+			packageProductDependencies = (
+				40E6CD9FFCACF3642198BDD7 /* LushKit */,
+				A42312DEA7A06105D2C5AB09 /* MvAuth */,
+			);
+			productName = LushLab;
+			productReference = 03EBA647458429BB01DB354F /* LushLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B57C44FA16BDDB987947CAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					033FB0AB85E5AC5653609468 = {
+						DevelopmentTeam = YBFJUNLFT6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9265FD832D86502D1AD0B48A /* Build configuration list for PBXProject "LushLab" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A311F4C7EC209CD625C84E5C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				13C2EB466E00A3E14A18552F /* XCRemoteSwiftPackageReference "MvAuth-iOS" */,
+				F812D7CA020A144D269BC56E /* XCLocalSwiftPackageReference ".." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 03C9865FDEB8742432104076 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033FB0AB85E5AC5653609468 /* LushLab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09F0FA36EDE8A657AE328F21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312E853D70EF6B112D8DD2F4 /* AuthModel.swift in Sources */,
+				1E5856CCA86318512DB8628E /* ContentView.swift in Sources */,
+				9D79A175775929CD2DF81FA8 /* Lab.swift in Sources */,
+				EDEA60C933E687E0374C8324 /* LoginView.swift in Sources */,
+				ADC5C0FFB3A1D3D431F97AE0 /* LushLabApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6AB26AB51625C26C6F4EC0C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YBFJUNLFT6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		94181A579331E52BB797212E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LushLab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.scalecode.LushLab;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BC23AAD0755413C2F5477BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YBFJUNLFT6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		EA1EC011D5A603211D48F0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LushLab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.scalecode.LushLab;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		881E2BFC769732886B5FC79B /* Build configuration list for PBXNativeTarget "LushLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1EC011D5A603211D48F0E4 /* Debug */,
+				94181A579331E52BB797212E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9265FD832D86502D1AD0B48A /* Build configuration list for PBXProject "LushLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB26AB51625C26C6F4EC0C5 /* Debug */,
+				BC23AAD0755413C2F5477BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F812D7CA020A144D269BC56E /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13C2EB466E00A3E14A18552F /* XCRemoteSwiftPackageReference "MvAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalecode-solutions/MvAuth-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40E6CD9FFCACF3642198BDD7 /* LushKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LushKit;
+		};
+		A42312DEA7A06105D2C5AB09 /* MvAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13C2EB466E00A3E14A18552F /* XCRemoteSwiftPackageReference "MvAuth-iOS" */;
+			productName = MvAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2B57C44FA16BDDB987947CAF /* Project object */;
+}

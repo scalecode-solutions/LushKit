@@ -1,0 +1,56 @@
+# LushLab — the standalone harness for LushKit. Generate the project with:
+#   cd Demo && xcodegen generate
+# The generated LushLab.xcodeproj is committed (matching GarageLab).
+name: LushLab
+options:
+  bundleIdPrefix: dev.scalecode
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+packages:
+  LushKit:
+    path: ..
+  MvAuth-iOS:
+    url: https://github.com/scalecode-solutions/MvAuth-iOS.git
+    branch: main
+settings:
+  base:
+    DEVELOPMENT_TEAM: YBFJUNLFT6
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+targets:
+  LushLab:
+    type: application
+    platform: iOS
+    sources:
+      - LushLab
+    dependencies:
+      - package: LushKit
+      - package: MvAuth-iOS
+        product: MvAuth
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.scalecode.LushLab
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+    # A real Info.plist (not generated keys): App Transport Security needs a
+    # dictionary, for plain http/ws to the dev stack on the local network.
+    info:
+      path: LushLab/Info.plist
+      properties:
+        CFBundleDisplayName: LushLab
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        # The wording a host app would use: general, and true.
+        NSBluetoothAlwaysUsageDescription: "Used to connect to nearby accessories."
+        # Local dev only: reach mvServer + mvLush on the Mac from a real phone.
+        NSLocalNetworkUsageDescription: "Used to reach the development server on your network."
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+schemes:
+  LushLab:
+    build:
+      targets:
+        LushLab: all
+    run:
+      config: Debug
